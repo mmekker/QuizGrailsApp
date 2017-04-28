@@ -3,6 +3,7 @@ import grails.rest.*
 
 @Resource(uri='/api/users')
 class User {
+	int id
 	String username
 	String password
 

@@ -6,8 +6,8 @@ class BootStrap {
 
     def init = { servletContext ->
     	User u = new User()
-    	u.username = "TestUsername"
-    	u.password = "TestPassword"
+    	u.username = "tu"
+    	u.password = "tp"
     	u.save()
     }
     def destroy = {

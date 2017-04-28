@@ -3,6 +3,16 @@ package quizappgrails
 class UrlMappings {
 
     static mappings = {
+        /* Views mapping */
+        "/"(controller: 'application', action: 'landing')
+        "/login"(controller: 'application', action: 'login')
+        "/register"(controller: 'application', action: 'register')
+        "/logout"(controller: 'application', action: 'logout')
+        "/home"(controller: 'application', action: 'home')
+        "/quiz"(controller: 'application', action: 'quiz')
+        "/checkQuiz"(controller: 'application', action: 'checkQuiz')
+
+
         /* API endpoints mapping */
         group "/api/users", {
             "/"(controller: 'users', action: 'GetAllUsers', method : 'get')

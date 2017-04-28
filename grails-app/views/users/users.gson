@@ -1,7 +1,0 @@
-import domains.User
-
-model {
-    Collection<User> users = []
-}
-
-json tmpl.'/users/user'(users)

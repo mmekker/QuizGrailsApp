@@ -1,7 +1,0 @@
-import User
-
-model {
-    Collection<User> users = []
-}
-
-json tmpl.'/templates/user'(users)
